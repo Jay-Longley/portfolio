@@ -47,14 +47,7 @@
     font-size: .95rem;
   }
   .status strong { color: var(--accent); }
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .25rem 1.5rem;
-    margin-top: .9rem;
-    color: #e5e7eb;
-    font-size: 1rem;
-  }
+  .header-actions { margin-top: 1rem; }
   main { padding: 1.5rem 1.25rem 3rem; }
   section { margin-bottom: 2.25rem; }
   h2 {
@@ -96,6 +89,8 @@
   .btn.verify:hover { background: var(--accent-hover); }
   .btn.view { background: var(--header); color: #fff; }
   .btn.view:hover { background: #374151; }
+  .btn.outline { background: transparent; color: #fef08a; border: 2px solid var(--accent); }
+  .btn.outline:hover { background: rgba(250, 204, 21, .18); }
   .btn:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
   footer {
     background: var(--header);
@@ -119,10 +114,12 @@
     <h1>Jay Longley</h1>
     <p class="sub">Motor Vehicle Maintenance &amp; Technical Qualification Portfolio</p>
     <div class="status"><strong>Availability:</strong> Wednesdays, Fridays and Saturdays</div>
-    <!-- CONTACT DETAILS: replace each N/A below with your own details. -->
-    <div class="contact">
-      <span>Email: Jay.longley9@Outlook.com</span>
-      <span>Phone Number: 07783527979</span>
+    <!-- CONTACT BUTTONS: to add your details, change BOTH the href and the button text.
+         Phone: href="tel:+447000000000" (international format, no spaces) and text "Call: 07000 000000"
+         Email: href="mailto:you@example.com" and text "Email: you@example.com" -->
+    <div class="actions header-actions">
+      <a class="btn outline" href="tel:07783527979">Call: 07783 527979</a>
+      <a class="btn outline" href="mailto:Jay.longley9@outlook.com">Email: Jay.longley9@outlook.com</a>
     </div>
   </div>
 </header>
@@ -286,6 +283,26 @@
         <a class="btn view" href="image_aqa_entry_level_statement.jpg" target="_blank" rel="noopener">View Results Statement Image</a>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>References</h2>
+
+    <div class="item">
+      <p>References are available on request. Please get in touch using the Call or Email buttons at the top of this page.</p>
+    </div>
+
+    <!-- REFEREES: once a tutor has agreed, delete the two lines marked START and END around
+         the block below, then fill in their details. Copy the block for each extra referee. -->
+    <!-- START
+    <div class="item">
+      <h3>Tutor Name</h3>
+      <p>Job title, City of Bristol College</p>
+      <div class="actions">
+        <a class="btn verify" href="mailto:tutor@example.com">Email tutor@example.com</a>
+      </div>
+    </div>
+    END -->
   </section>
 
 </main>
